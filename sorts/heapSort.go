@@ -32,7 +32,7 @@ func (h *heap) Swap(i, j int) {
 // 将i位置的值下移
 func (h *heap) down(i int) {
 	for {
-		l, r := 2*i, 2*i+1 // 左右孩子下标
+		l, r := 2*i+1, 2*i+2 // 左右孩子下标
 		if l >= len(h.nums) {
 			break
 		}
